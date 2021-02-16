@@ -31,7 +31,7 @@
         </v-list>
       </v-navigation-drawer>
 
-      <v-app-bar app>
+      <v-app-bar app color="blue" dark>
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
         <v-toolbar-title>荆棘聊天室</v-toolbar-title>
       </v-app-bar>

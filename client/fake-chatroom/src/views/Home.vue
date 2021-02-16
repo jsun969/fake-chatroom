@@ -1,16 +1,16 @@
 <template>
-  <v-card :height="size + 50" :width="size">
+  <v-card :height="size" :width="size">
     <v-tabs v-model="tab" grow>
       <v-tab>登录</v-tab>
       <v-tab>注册</v-tab>
     </v-tabs>
     <v-tabs-items v-model="tab">
-      <v-tab-item :style="{ padding: size / 10 + 'px', height: (size + 50) * 0.8 + 'px' }">
+      <v-tab-item :style="{ padding: size / 10 + 'px', height: size * 0.8 + 'px' }">
         <v-text-field v-model="loginName" label="用户名"></v-text-field>
         <v-text-field v-model="loginPwd" label="密码" type="password"></v-text-field>
         <v-btn color="primary" elevation="2" large>登录</v-btn>
       </v-tab-item>
-      <v-tab-item :style="{ padding: size / 10 + 'px', height: (size + 50) * 0.8 + 'px' }">
+      <v-tab-item :style="{ padding: size / 10 + 'px', height: size * 0.8 + 'px' }">
         <v-text-field v-model="registerName" label="用户名" :rules="nameRules"></v-text-field>
         <v-text-field v-model="registerPwd1" label="密码" type="password" :rules="pwdRules"></v-text-field>
         <v-text-field v-model="registerPwd2" label="重复密码" type="password" :rules="rePwdRule"></v-text-field>
